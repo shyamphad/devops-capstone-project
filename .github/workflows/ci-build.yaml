@@ -1,9 +1,12 @@
 name: CI Build
+
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -25,7 +28,7 @@ jobs:
           --health-retries 5
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Install dependencies
@@ -34,9 +37,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Lint with flake8
-        run: flake8 service tests --max-line-length=127
+        run: |
+          flake8 service tests --max-line-length=127
 
-      - name: Run unit tests with nose
-        run: nosetests -v --with-coverage --cover-package=service
+      - name: Run unit tests with nosetests
+        run: |
+          nosetests -v --with-coverage --cover-package=service
         env:
           DATABASE_URI: postgresql://postgres:postgres@postgres:5432/testdb
