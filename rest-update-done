@@ -1,1 +1,11 @@
-{"error":"Not Found","message":"404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.","status":404}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   188  100   102  100    86  22676  19119 --:--:-- --:--:-- --:--:-- 47000
+HTTP/1.1 404 NOT FOUND
+Server: Werkzeug/2.1.2 Python/3.11.14
+Date: Wed, 21 Jan 2026 18:39:04 GMT
+Content-Type: application/json
+Content-Length: 102
+Connection: close
+
+{"error":"Not Found","message":"404 Not Found: Account with id [1] could not be found.","status":404}

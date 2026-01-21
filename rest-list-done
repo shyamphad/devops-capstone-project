@@ -1,1 +1,11 @@
-{"error":"Method not Allowed","message":"405 Method Not Allowed: The method is not allowed for the requested URL.","status":405}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   246  100   246    0     0  40169      0 --:--:-- --:--:-- --:--:-- 49200
+HTTP/1.1 200 OK
+Server: Werkzeug/2.1.2 Python/3.11.14
+Date: Wed, 21 Jan 2026 18:39:04 GMT
+Content-Type: application/json
+Content-Length: 246
+Connection: close
+
+[{"address":"123 Main","date_joined":"2026-01-21","email":"john@test.com","id":16,"name":"John","phone_number":"555-1234"},{"address":"123 Main","date_joined":"2026-01-21","email":"john@test.com","id":18,"name":"John","phone_number":"555-1234"}]
